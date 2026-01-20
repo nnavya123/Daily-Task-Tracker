@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>All Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a href="index.html" class="back-btn">⬅ Back to Dashboard</a>
+
+<h1>All Tasks</h1>
+
+<div class="form-container">
+    <input type="date" id="searchDate">
+    <input type="text" id="searchText" placeholder="Search by task name">
+    <button onclick="searchTasks()">Search</button>
+</div>
+
+<table>
+    <thead>
+        <tr>
+            <th>Task</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tbody id="allTasksTable"></tbody>
+</table>
+
+<script src="all-tasks.js"></script>
+</body>
+</html>
